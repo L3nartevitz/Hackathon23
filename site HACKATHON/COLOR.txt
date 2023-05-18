@@ -1,0 +1,12 @@
+BODY: #1a1a27
+FONT: Poppins
+TEXTO: WHITE
+
+Os Jogos Escolares do Estado de São Paulo (JEESP) tem como objetivo promover a pratica de esportes e a relação interpessoal.
+Os esportes incluem atletismo, badminton, ciclismo, ginastica artistica e ritmica, judo, karate, natação, taekwondo, volei de praia e wrestling que são divididos por provas e cada modalidade tem seus próprios modos de avaliação
+
+Os e-sports sao competicoes de jogos eletrônicos, comumente apresentando os gêneros de rts(estrategia em tempo real), fps(tiro em primeira pessoa), moba (arenas de batalha), luta, esporte simulados e cartas.
+Jogos populares para essa modalidade incluem CS(counter strike), dota, free fire, LoL, Rainbow six, StarCraft, Street Fighter, Valorant e etc.
+
+Jogos de interclasse sao organizados com o proposito de estimular a interacao entre diferentes classes de uma escola, jogos comumente escolhidos sao a queimada, futebol, volei, basquete.
+Por ser um evento normalmente realizado com as classes de uma unica escola as regras e cronograma são definidos pela própria escola

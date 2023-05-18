@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mais informações</title>
+	<link rel="stylesheet" type="text/css" href="info.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+</head>
+<body style="background-color: rgb(39, 39, 39)">
+
+	<div class="header" id="header">
+        <button onclick="toggleSidebar()" class="btn_icon_header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </button>
+        
+        <div class="logo_header">
+            <img src="logo.png" alt="Logo GN" class="img_logo_header">
+        </div>
+
+
+
+        <div class="navigation_header" id="navigation_header">
+            <button onclick="toggleSidebar()" class="btn_icon_header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+            </button>
+            <a href="home.html">Home</a>
+            <a href="CROOGRAMA.html">Cronograma</a>
+            <a href="info.html" class="active">Info</a>
+			<a href="chaveamento.html">Chaveamento</a>
+            <a href="meulogin.html" id="adm">Login</a>
+        </div>
+    </div>
+
+	<main>
+		<div  class="content" onfocus="closeSidebar()" id="content">
+	<div class="jeesp">	
+		<h1 class="titulo">­ ­O que é o JEESP?</h1>
+		<p>Os Jogos Escolares do Estado de São Paulo (JEESP) tem como objetivo promover a prática de esportes e a relação interpessoal.
+Os esportes incluem atletismo, badminton, ciclismo, ginastica artistica e ritmica, judo, karate, natação, taekwondo, volei de praia e wrestling que são divididos por provas e cada modalidade tem seus próprios modos de avaliação</p>
+	</div>
+	<div class="inter">
+		<h1 class="titulo">­ 	­O que é Interclasse?</h1>
+		<p>Jogos de interclasse são organizados com o proposito de estimular a interação entre diferentes classes de uma escola, jogos comumente escolhidos são a queimada, futebol, vôlei, basquete.
+Por ser um evento normalmente realizado com as classes de uma única escola as regras e cronograma são definidos pela própria escola.</p>
+	</div>	
+	<div class="e-sports">
+		<h1 class="titulo">O que é E-sports</h1>
+		<p>Os E-sports sao competições de jogos eletrônicos, comumente apresentando os gêneros de RTS (estrategia em tempo real), FPS (tiro em primeira pessoa), MOBA (arenas de batalha), luta, esporte simulados e cartas.
+Jogos populares para essa modalidade incluem CS (Counter Strike), Dota, Free Fire, LoL, Rainbow Six, StarCraft, Street Fighter, Valorant e etc.</p>
+	</div>
+</div>
+	</main>
+
+
+	<div class="cadastrar_time">
+		<h1>­ </h1>
+		<p>Ficou interessado em inscrever seu grupo? Peça ajuda do seu orientador e cadastre seu time.</p>
+		<br> <br>
+		<a href="meulogin.html" id="inscrever">Inscrever-se</a>
+	</div>
+
+	<script>
+		var header           = document.getElementById('header');
+		var navigationHeader = document.getElementById('navigation_header');
+		var content          = document.getElementById('content');
+		var showSidebar      = false;
+	
+		function toggleSidebar()
+		{
+			showSidebar = !showSidebar;
+			if(showSidebar)
+			{
+				navigationHeader.style.marginLeft = '-10vw';
+				navigationHeader.style.animationName = 'showSidebar';
+				content.style.filter = 'blur(2px)';
+			}
+			else
+			{
+				navigationHeader.style.marginLeft = '-100vw';
+				navigationHeader.style.animationName = '';
+				content.style.filter = '';
+			}
+		}
+	
+	function closeSidebar()
+    {
+        if(showSidebar)
+        {
+            showSidebar = true;
+            toggleSidebar();
+        }
+    }
+	
+		window.addEventListener('resize', function(event) {
+			if(window.innerWidth > 768 && showSidebar) 
+			{  
+				showSidebar = true;
+				toggleSidebar();
+			}
+		});
+	
+	</script>
+</body>
+</html>

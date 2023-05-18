@@ -1,0 +1,61 @@
+body{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    background-color: rgb(26, 26, 39);
+    padding: 15px;
+
+}
+
+header{
+    display: flex;
+    height: 20vh;
+    flex-direction: row;
+   justify-content: center;
+   justify-content: space-between;
+   align-items: center;
+   padding: 40px;
+ 
+}
+ 
+.navegation
+
+a{  
+    color: white;
+ font-style: italic;
+}
+
+a:hover{
+ color: rgb(203, 17, 17);
+ transition: 0.3s all;
+}
+
+#adm{
+    border: 3px solid rgb(203, 17, 17);
+    padding: 10px;
+    border-radius: 15px;
+  
+  }
+  #adm:hover{
+     background-color:  rgb(203, 17, 17);
+     color: white;
+  }
+  
+   header img{
+       border-radius: 100px;
+      height: 150px;
+      width: 150px;
+      margin-right: 60vh;
+  }
+  
+  li{
+  display: inline-block;
+  margin: 30px;
+  }
+
+  main{
+      display: flex;
+      justify-content: center;
+  }
+
+
